@@ -51,15 +51,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
       {/* Background Scenic Himalayan Photo with Luminous Warm Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2400&q=85"
+          src="https://www.easeindiatrip.com/blog/wp-content/uploads/2024/12/Uttarakhand-travel-guide.jpg"
           alt="Himalayan Mountain Peaks Uttarakhand"
-          className="w-full h-full object-cover object-center filter saturate-110"
+          className="w-full h-full object-cover object-center filter saturate-120 contrast-110 brightness-95"
         />
-        {/* Warm daylight radiant gradient overlay so photography is clearly visible but text is perfectly readable */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-amber-50/80 to-[#FFFDF9] backdrop-blur-[2px]"></div>
-        
+        {/* Keep the scenic Himalayan photo visible while still making the text crisp and legible */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#fffdf8]/35 via-[#fdf4d8]/40 to-[#fffdf9]/75 backdrop-blur-[1px]"></div>
+
         {/* Subtle decorative Aipan pattern watermark */}
-        <div className="absolute inset-0 aipan-pattern-subtle opacity-60 pointer-events-none"></div>
+        <div className="absolute inset-0 aipan-pattern-subtle opacity-35 pointer-events-none"></div>
 
         {/* Golden Sun Flare ambient glow */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[650px] h-[350px] sm:h-[650px] rounded-full bg-gradient-to-tr from-amber-400/20 via-orange-300/25 to-yellow-200/30 blur-3xl pointer-events-none animate-pulse-glow"></div>
