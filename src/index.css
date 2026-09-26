@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-heading: 'Yatra One', cursive;
+    --font-rozha: 'Rozha One', serif;
+    --font-sans: 'Outfit', sans-serif;
+  }
+}
+
+.font-serif-royal {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-pahadi-display {
+  font-family: 'Yatra One', 'Rozha One', cursive, serif;
+}
+
+.font-rozha {
+  font-family: 'Rozha One', serif;
+}
+
+/* Light Aipan background patterns */
+.aipan-border {
+  background-image: radial-gradient(#D97706 1.5px, transparent 1.5px), radial-gradient(#DC2626 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.aipan-pattern-subtle {
+  background-color: #FFFDF9;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.12) 1.5px, transparent 0), radial-gradient(rgba(220, 38, 38, 0.08) 1.5px, #FFFDF9 0);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #FEF3C7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}
+
+/* Animation utilities */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Light Glass Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(217, 119, 6, 0.6);
+  box-shadow: 0 20px 35px -10px rgba(217, 119, 6, 0.18), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Mountain silhouette gradient for light mode */
+.himalaya-gradient-light {
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0) 0%, rgba(254, 243, 199, 0.6) 60%, #FFFDF9 100%);
+}
