@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { Camera, X, MapPin } from 'lucide-react';
+import choliyaImage from '../assets/choliya.jpeg';
+import devasthaliimage from '../assets/devasthali2.jpeg';
+import jaunsarImage from '../assets/jaunsar.jpeg';
+import pushpeshImage from '../assets/pushpesh pant.jpeg';
+import felicitationImage from '../assets/felicitation.jpeg';
+
+
 import { folkAudio } from '../utils/audio';
 
 interface GalleryPhoto {
@@ -17,40 +24,40 @@ const PHOTOS: GalleryPhoto[] = [
     title: 'Chholiya Warrior Troupes',
     category: 'dance',
     location: 'Kumaon Hills',
-    image: 'https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1200&q=80',
+    image: choliyaImage,
     caption: 'Fierce Rajput sword dancers adorned in scarlet turbans and brass shields performing at the annual festival.',
   },
   {
     id: '2',
-    title: 'Sunrise over Trishul & Nanda Devi',
-    category: 'nature',
-    location: 'Chamoli / Garhwal',
-    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80',
-    caption: 'The sacred golden peaks of Nanda Devi and Trishul casting dawn shadows over high alpine bugyals.',
+    title: 'Devasthali Group Performance',
+    category: 'dance',
+    location: 'Mac, IITR',
+    image: devasthaliimage,
+    caption: 'Experienced the high-octane energy and cultural majesty of Devasthali Group\'s performances',
   },
   {
     id: '3',
-    title: 'IIT Roorkee Shobha Yatra',
-    category: 'iitr',
-    location: 'James Thomason Building, IITR',
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80',
-    caption: 'IIT Roorkee students celebrating Uttarakhand Diwas in traditional Pahadi Topis and Rangwali Pichoras.',
+    title: 'Jaunsari Dance',
+    category: 'dance',
+    location: 'MAC, IITR',
+    image: jaunsarImage,
+    caption: 'Jaunsari team performing on their traditional folk music with live instrumentation at the IIT Roorkee campus.',
   },
   {
     id: '4',
-    title: 'Almora Aipan Sacred Geometry',
-    category: 'craft',
-    location: 'Almora, Kumaon',
-    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Master artisans hand-drawing Chowki patterns with soaked rice flour paste over terracotta Geru clay.',
+    title: 'Prof. Pushpesh Pant',
+    category: 'guest',
+    location: 'MAC, IITR',
+    image: pushpeshImage,
+    caption: 'Prof. Pushpesh Pant ji is a Padma Shri awardee, distinguished academic, and revered food historian who beautifully bridges the worlds of international relations and India\'s rich culinary heritage',
   },
   {
     id: '5',
-    title: 'Jhora Circle Dance at Night',
-    category: 'dance',
-    location: 'Bageshwar Mela',
-    image: 'https://images.unsplash.com/photo-1609137144822-0d52bc81e355?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Villagers singing community ballads under full moon illumination with Hurka and brass cymbals.',
+    title: 'Felicitation of Chief guest by Director sir',
+    category: 'guest',
+    location: 'MAC IITR',
+    image: felicitationImage,
+    caption: 'The Chief Guest was felicitated by Director sir at the MAC, IITR. The event was graced by the presence of esteemed dignitaries and faculty members, celebrating the rich cultural heritage of Uttarakhand.',
   },
   {
     id: '6',
