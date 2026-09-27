@@ -90,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
 
         {/* Description Subtitle */}
         <p className="max-w-3xl text-base sm:text-lg md:text-xl text-stone-700 font-medium mb-8 leading-relaxed">
-          Experience the untamed spirit and sacred rhythm of the Himalayas at <span className="text-amber-800 font-bold">IIT Roorkee</span>—the historic Gateway to Devbhoomi. From the thunderous warrior rhythm of the <span className="text-red-700 font-semibold">Chholiya dance</span> to sacred <span className="text-red-700 font-semibold">Aipan art</span>, iron-kadhai <span className="text-red-700 font-semibold">Kafuli banquets</span>, and the timeless folk melodies of Narendra Singh Negi.
+          Experience the untamed spirit and sacred rhythm of the Himalayas at <span className="text-amber-800 font-bold">IIT Roorkee</span>—the historic Gateway to Devbhoomi. From the thunderous warrior rhythm of the <span className="text-red-700 font-semibold">Chholiya dance</span> to sacred <span className="text-red-700 font-semibold">Aipan art</span>, iron-kadhai <span className="text-red-700 font-semibold">Kafuli banquets</span>, and the timeless folk melodies of Garhwal, Kumaon and Jaunsar.
         </p>
 
         {/* Date & Venue Badges */}
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           </div>
           <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/95 border border-amber-300 shadow-sm text-stone-800">
             <MapPin className="w-4 h-4 text-red-600" />
-            <span className="font-semibold text-stone-800">James Thomason Lawn & MAC, IIT Roorkee</span>
+            <span className="font-semibold text-stone-800"> MAC, IIT Roorkee</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/95 border border-amber-300 shadow-sm text-stone-800">
             <Award className="w-4 h-4 text-amber-600" />

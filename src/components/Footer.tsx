@@ -109,7 +109,7 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-1.5 text-center sm:text-left">
             <span>Organized with</span>
             <Heart className="w-4 h-4 text-red-600 fill-red-600" />
-            <span>by the Himalayan Cultural Community at IIT Roorkee</span>
+            <span>by the Uttarakhand Community at IIT Roorkee</span>
           </div>
 
           <div className="flex items-center gap-4">
