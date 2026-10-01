@@ -5,6 +5,8 @@ import devasthaliimage from '../assets/devasthali2.jpeg';
 import jaunsarImage from '../assets/jaunsar.jpeg';
 import pushpeshImage from '../assets/pushpesh pant.jpeg';
 import felicitationImage from '../assets/felicitation.jpeg';
+import dayImage from '../assets/day.jpeg';
+
 
 
 import { folkAudio } from '../utils/audio';
@@ -12,7 +14,7 @@ import { folkAudio } from '../utils/audio';
 interface GalleryPhoto {
   id: string;
   title: string;
-  category: 'dance' | 'nature' | 'iitr' | 'craft';
+  category: 'dance' | 'nature' | 'iitr' | 'craft' | 'guest';
   location: string;
   image: string;
   caption: string;
@@ -61,10 +63,10 @@ const PHOTOS: GalleryPhoto[] = [
   },
   {
     id: '6',
-    title: 'Valley of Flowers Alpine Bloom',
+    title: 'Celebration',
     category: 'nature',
-    location: 'Bhyundar Valley',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    location: 'Boat Club, IITR',
+    image: dayImage,
     caption: 'Over 600 species of high altitude wild flora blossoming along glacial meltwater streams.',
   },
   {
@@ -126,6 +128,7 @@ export const Gallery: React.FC = () => {
             { id: 'nature', label: 'Sacred Himalayas' },
             { id: 'iitr', label: 'IIT Roorkee' },
             { id: 'craft', label: 'Art & Jewelry' },
+            { id: 'guest', label: 'Guests & Honors' },
           ].map((f) => (
             <button
               key={f.id}
